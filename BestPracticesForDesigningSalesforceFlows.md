@@ -1,5 +1,5 @@
 # Best practices for developing Salesforce Flows
-## A. Prerequisites – before you start using your Salesforce Flow:
+## A. Prerequisites – before you start building your Salesforce Flow:
 ###	1. Analyze requirements
 What is the business case? Which are the specific use cases? Think critically and look outside of the box. Hence do not be afraid to ask your client many questions to get a clear and complete understanding.
 ### 2.	Write User Stories
@@ -51,9 +51,9 @@ Of course, you develop your Flow in a sandbox or scratchorg. So testing thorough
 This is especially true if your Flow uses complex logic. Before distributing the Flow you shall test all use cases you had planned in your concept. Also try to come up with other permutations for testing.
 ### 3.	Create faults paths and handle error messages
 Fault and errors are bound to happen when working with Flows. So make sure that your users are presented with detailed error messages when unexpected actions occur. Instead of showing the Salesforce standard message of “an unhandled error has occurred”, rather show them how to handle the error properly.
-### 3. 
+## D. Deploying - distribute your Flow after testing:
 
-## Interesting resources:
+## Resources:
 - https://help.salesforce.com/s/articleView?id=000325257&type=1
 - https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SOQL_VLSQ.htm
 - https://www.salesforceben.com/salesforce-flow-best-practices/
