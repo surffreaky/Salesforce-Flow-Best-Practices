@@ -1,9 +1,9 @@
 # Best practices for developing Salesforce Flows
 ## A. Prerequisites – before you start using your Salesforce Flow:
-1.	Analyze requirements
+###	1. Analyze requirements
 What is the business case? Which are the specific use cases? Think critically and look outside of the box. Hence do not be afraid to ask your client many questions to get a clear and complete understanding.
 
-2.	Write User Stories
+### 2.	Write User Stories
 Identify all user stories and write them down in the format (2 sentences maximum): 
 *As (a user) I want to (do something) by (achieving something).*
 In this way you make sure to identify the role(s), describe the functionality and explain the reason. Also write down all corresponding user acceptance criteria.
@@ -15,7 +15,7 @@ Write each step of the flow in pseudocode before attempting to implement the flo
 Set entry conditions wisely in your Start Node. Be as specific as possible to minimize the occasions to run the flow if it is triggered for example. It should not run if it is not necessary for your use case. Also have a good understanding of your Salesforce org and corresponding automations. Since the Spring 2022 release you can open the Flow Trigger Explorer to identify interdependencies between other flows. Always be familiar and aware of the typical Salesforce [order of execution](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_triggers_order_of_execution.htm).
 
 2.	Save your Flow
-- It is really annoying if you have forgotten to save your flow and your work has disappeared all of a sudden. Yes, it has happened to me already. So after the first configurative steps you want to save the Flow. Think about a good naming for your Flow. Other Administrators should know right away what the Flow does. Here is one example: ‘Set the country-specific entitlement processes and record types’.
+<p>It is really annoying if you have forgotten to save your flow and your work has disappeared all of a sudden. Yes, it has happened to me already. So after the first configurative steps you want to save the Flow. Think about a good naming for your Flow. Other Administrators should know right away what the Flow does. Here is one example: ‘Set the country-specific entitlement processes and record types’.</p>
 
 3.	Test while building your Flow
 Save as you go then use the run and debug function to provide example input to see each scenario executes as expected. By testing early and testing often, you maintain a working flow that you can restore and branch off from to test other scenarios. Think about validating user inputs before passing them to the flow. What input data are required? By reflecting and validating your input data, missing objects are being detected and misconfiguration can be prevented.
@@ -51,3 +51,4 @@ Interesting sources:
 - https://www.youtube.com/watch?v=bENuHB7YQG0
 - https://www.captechconsulting.com/blogs/9-tips-for-using-salesforces-lightning-flow-the-right-way
 
+<!-- The text has been written by Michael Hellmann -->
