@@ -30,6 +30,11 @@ When you query data by using the GET Element, use selective filters/conditions a
 - audit dates (createdDate and SystemModstamp)
 - recordType fields (indexed for all standard objects)
 - custom fields that are maked as Externa ID or Unique
+## C. Testing and Debugging – while/after building test your Flow:
+### 1.	Always test your Flow! 
+Of course, you develop your Flow in a sandbox or scratchorg. So testing thoroughly is as important as using this testing environment before pushing your development into Production. Flow Builder has a build-in debug tool that has been improved in the recent Salesforce releases. It simplifies testing by using different users and records in a roll-back mode for example. Make sure to test different use cases, with different user roles, profiles and permission sets. Apart from positive test scenarios to get the expected result, also try to come up with negative tests: They are also called provocation tests, robustness tests or falsifying tests. The negative test checks whether the application reacts as expected (i.e. without program termination) to (incorrect) input or operation that does not meet the requirements of the application. Invalid values are intentionally entered, masks are not or only incompletely filled out, interfaces are supplied with incorrect values or the database is disconnected. The test case therefore checks for ‘correct’ processing in the event of incorrect handling.
+### 2.	Create faults paths and handle error messages
+Fault and errors are bound to happen when working with Flows. So make sure that your users are presented with detailed error messages when unexpected actions occur. Instead of showing the Salesforce standard message of “an unhandled error has occurred”, rather show them how to handle the error properly. 
 ## Interesting sources:
 - https://help.salesforce.com/s/articleView?id=000325257&type=1
 - https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_SOQL_VLSQ.htm
